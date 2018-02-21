@@ -95,14 +95,6 @@ function Animator(container, base, player, gameController, enemy, score) {
   }
 
   checkKeyDown = function (e) {
-    if (that.game && !that.player.isJumping) {
-      if (e.keyCode === KEY_CODES.S) {
-        that.player.startSingleJump();
-      }
-      else if (e.keyCode === KEY_CODES.SPACE) {
-        that.player.startDoubleJump();
-      }
-    }
     if (!that.game) {
       that.gameController.restart();
     }
